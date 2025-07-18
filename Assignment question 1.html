@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Quesion 1</title> 
+<!-- linking html to css  -->
+<link rel="stylesheet" href="Q1 style.css"> 
+</head>
+    <header>
+    <!--creating navigation bar and creating hyper-links-->
+     <nav class ="navibar">
+        <ul>
+         <li> <a href="home.html">Home</a></li>
+         <li> <a href="features.html">Features</a></li> 
+         <li> <a href="pricing.html">Pricing</a></li> 
+         <li> <a href="contactus.html">Contact Us</a></li>    
+        </ul>
+     </nav> 
+    </header><br><br><br>
+    <!-- end of navigation and end of header tag -->
+    <body class ="bottle"><br><br><br><br><br>
+        <button id="button" class="but">Play</button><br><br><br>
+    <audio controls id="myaudio">
+    <source src="productpage.mp3">
+    </audio>
+        <h1 align="center">EcoSmart Water Bottle</h1>
+        <h2 align="center">EcoSmart Water Bottle</h2>
+        <img src="waterbottle1.jpg"id ="displayFun" height="400"><br>
+        <button id ="buyBut" class="button">Buy now<br></button>
+        <br><br>
+    <!-- previous section creates headers,imports an image and adds a button -->
+        <label id="totalPrice">Total Price:R450</label>
+        <form>
+    <!-- this section creates dropdown menu that has prices attached to it -->
+    <div class="dropOpt" id="dropDown-option">   
+        <label style="color: rgb(255, 255, 255);">Choose your color</label>     
+        <select class="dropDown" id="priceColor">
+       <option value="450">none</option>    
+       <option value="500">Pink(R500)</option>
+       <option value="550">Purple(R550)</option>
+       <option value="600">Green(R600)</option>
+       <option value="700">Blue(R700)</option>
+        </select><br><br><br>
+    <!-- this section is used for the modal pop-up. this is where i added the images and close button  -->
+        <button class="closeBut" id="button-close">close</button><br> 
+        <img src="pinkbottle.png" height="150"><br><br>
+        <img src="purplebottle.png" height="150"><br><br>
+        <img src="greenbottle.png" height="150"><br><br>
+        <img src="bluebottle.png" height="150"><br><br>
+    <!-- this section creates the radio button for addtional features that is shown on modal pop-up  -->
+    <div class="radioDown">
+        <label >engraving +R400</label><br>
+        <input id="priceExtra1" type="radio"value="400"><br>
+        <label>packaging +R100</label><br>
+        <input id="priceExtra2" type="radio"value="100"><br> 
+            </form></div></div>
+        </form>
+        <!-- this code links this file to java script file -->
+        <script src="q1js.js"></script>
+    </body>
+
+    <footer>
+        <form class = "form">
+            <label style="font-size: larger;">Contact Us</label><br><br>
+            <input type="Your name"value="Your Name" style=width:300><br><br>
+            <input type="Your Email"value="Your Email"style=width:300><br> <br>
+            <textarea style=width:300>Your Message</textarea><br><br>
+            <input type="checkbox"value="checkbox">
+            <label style="padding: 30;">I agree to <a href="" style="color:rgb(9, 116, 178);">Terms and conditions</a></label>
+            <br><br>
+            <button class="button" >Submit</button>
+        </form>   
+    </footer>
+
+
+</html>

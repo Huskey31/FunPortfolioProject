@@ -1,0 +1,39 @@
+body {
+    background-image: url('background3.jpg');
+    background-size: 1000px;
+    background-attachment: fixed; 
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+ul li {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    padding: 15px 50px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    backdrop-filter: blur(4px); /* Stylish blur on hover */
+}
+
+ul li:hover {
+    font-size: 36px;
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px black  solid;
+}
+
+.portlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    margin: 0;
+}
